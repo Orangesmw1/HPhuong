@@ -23,6 +23,7 @@ html,body {
         
 
         position: relative;
+        padding-bottom: 60px;
     }
 
     .overlay-header {
@@ -43,24 +44,37 @@ html,body {
     .navbar-brand {
         font-family: 'Montserrat', sans-serif !important;
         font-weight: bold !important;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         font-size: 1.3rem;
 
         color: #00bfff !important;
+    }
+
+    .navbar-brand i {
+        padding-right: 5px;
+        font-size: 1.5rem;
     }
 
     .navbar-toggler {
         border-color: #fff !important;
     }
 
+    .navbar-toggler:hover {
+        border-color: #fff !important;
+    }
+
     .navbar-icon i {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .navbar-collapse.show {
         background-color: rgba(0, 0, 0, 0.212);
         width: 100% !important;
+
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 10px;
     }
     
     .navbar-nav {
@@ -90,7 +104,7 @@ html,body {
 
 
     .block-socical {
-        width: 30%;
+        width: 40%;
         padding-left: 10px;
 
 
@@ -162,10 +176,10 @@ html,body {
         color: #fff;
         border-color: #00bfff !important;
         border-radius: 0;
-        border: 3px solid;
+        border: 2px solid;
         background: transparent;
         
-        width: 250px;
+        width: 300px;
         height: 45px;
 
         text-transform: uppercase;
@@ -182,6 +196,162 @@ html,body {
     }
 
 
+    .scroll-down-header {
+        position: absolute;
+        bottom: 5%;
+        right: 23%;
+
+
+    }
+
+    .scroll-down-header a i {
+        color: #00bfff;
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .scroll-down-header a span{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+
+        position: relative;
+    }
+
+    .scroll-down-header a span::after {
+        position: absolute;
+        top: 5px;
+        right: -20px;
+        
+        content: "";
+        width: 2px;
+        height: 85px;
+        background-color: #fff;
+    }
+
+   
+
+
+
+}
+
+/* For mobile section  */
+
+@media (max-width: 490px) {
+    section {
+        
+    }
+
+    .about {
+        padding-top: 90px;
+        background-color: #00bfff;
+
+        padding-bottom: 30px;
+    }
+
+    .about-title {
+        text-align: center;
+        
+        padding-bottom: 20px;
+
+        position: relative;
+       
+    }
+
+    .about-title::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 50%;
+        height: 1px;
+        background-color: rgb(255 255 255 / 49%);
+    }
+
+    .about-title h6 {
+        font-size: 1rem;
+        text-transform: uppercase;
+
+    }
+
+    .about-title h2 {
+        color: rgba(255, 255, 255, 0.932);
+        font-size: 2.2rem;
+    }
+
+    .about-content {
+        padding: 0 60px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+
+        line-height: 28px;
+    }
+
+
+    .block-socical-about {
+        width: 100%;
+        padding: 40px 80px 20px;
+
+
+
+        display: flex;
+        justify-content: space-around;
+
+        
+        position: relative;
+    }
+
+    .block-socical-about::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        
+        transform: translateX(-50%);
+
+        width: 50%;
+        height: 1px;
+        background-color: rgb(255 255 255 / 49%);
+    }
+
+    .block-socical-about a {
+        text-decoration: none;
+        color: black!important;
+
+    }
+
+    .block-socical-about .facebook {
+        background-color: #fff;
+        padding: 5px 13px;
+        border-radius: 50%;
+      
+    }
+
+    .block-socical-about .instagram {
+        background-color: #fff;
+
+        padding: 5px 11px;
+        border-radius: 50%;
+
+
+    }
+
+    .block-socical-about .tripper {
+        background-color: #fff;
+
+        padding: 5px 13px;
+        border-radius: 50%;
+        
+
+    }
 
 
 }
