@@ -47,7 +47,7 @@ html,body {
         /* text-transform: uppercase; */
         font-size: 1.3rem;
 
-        color: #00bfff !important;
+        color: #A1C9F1 !important;
     }
 
     .navbar-brand i {
@@ -99,7 +99,9 @@ html,body {
    
 
     .navbar-nav .nav-link:hover {
-        color: #00bfff !important;
+        color: #A1C9F1 !important;
+      
+
     }
 
 
@@ -111,26 +113,45 @@ html,body {
         display: flex;
         justify-content: space-between;
 
-        color: #fff;
+            
     }
 
     .block-socical .facebook {
-        background-color: #00bfff;
+        background-color: #fff;
         padding: 5px 13px;
         border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .facebook:hover {
+        color: #fff;
+        background-color: #A1C9F1;
+
     }
 
     .block-socical .instagram {
-        background-color: #00bfff;
+        background-color: #fff;
         padding: 5px 11px;
         border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .instagram:hover {
+        color: #fff;
+        background-color: #A1C9F1;
 
     }
 
     .block-socical .tripper {
-        background-color: #00bfff;
+        background-color: #fff;
         padding: 5px 13px;
         border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .tripper:hover {
+        color: #fff;
+        background-color: #A1C9F1;
 
     }
 
@@ -174,7 +195,7 @@ html,body {
 
     .button-carousel  {
         color: #fff;
-        border-color: #00bfff !important;
+        border-color: #A1C9F1 !important;
         border-radius: 0;
         border: 2px solid;
         background: transparent;
@@ -191,7 +212,7 @@ html,body {
 
     .button-carousel:hover {
         background-color: #fff;
-        color: #00bfff;
+        color: #A1C9F1;
         border-color: #fff !important;
     }
 
@@ -205,7 +226,7 @@ html,body {
     }
 
     .scroll-down-header a i {
-        color: #00bfff;
+        color: #A1C9F1;
         font-size: 0.8rem;
         margin-right: 10px;
     }
@@ -244,7 +265,7 @@ html,body {
 
     .about {
         padding-top: 90px;
-        background-color: #00bfff;
+        background-color: #A1C9F1;
 
         padding-bottom: 30px;
     }
