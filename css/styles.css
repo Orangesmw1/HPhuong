@@ -11,9 +11,9 @@ html,body {
 
 /* ----------- header ----------  */
 
-/* For mobile header  */
+/* For tablet header  */
 
-@media (max-width: 490px) {
+@media (min-width: 491px) and (max-width: 740px) {
     header {
         background-image: url(../image/hp1.jpg);
         background-position: center;
@@ -33,7 +33,7 @@ html,body {
         
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.616);
+        background-color: rgba(0, 0, 0, 0.418);
     }
 
     
@@ -69,13 +69,36 @@ html,body {
     }
 
     .navbar-collapse.show {
-        background-color: rgba(0, 0, 0, 0.212);
-        width: 100% !important;
+        background-color: #a1c9f1;
+        /* width: 100% !important; */
 
         margin-top: 10px;
         border-radius: 20px;
         padding: 10px;
+
+        position: absolute;
+        top: 45px;
+        right: 13px;
+        width: 30% ;
+        z-index: 101;
+        height: 230px;
+
+        
+        transition: all linear 0.2s;
+        
     }
+
+    .collapse:not(.show) {
+        position: absolute;
+        right: 13px !important;
+        top: 45px;
+       
+
+
+       
+
+    }
+    
     
     .navbar-nav {
 
@@ -94,19 +117,20 @@ html,body {
 
 
     .nav-item.active .nav-link {
+        color: #3d76f3 !important;
         font-size: 1rem!important;
     }
    
 
     .navbar-nav .nav-link:hover {
-        color: #A1C9F1 !important;
+        color: #3d76f3 !important;
       
 
     }
 
 
     .block-socical {
-        width: 40%;
+        width: 80%;
         padding-left: 10px;
 
 
@@ -125,7 +149,8 @@ html,body {
 
     .block-socical .facebook:hover {
         color: #fff;
-        background-color: #A1C9F1;
+        background-color: #3d76f3;
+
 
     }
 
@@ -138,7 +163,7 @@ html,body {
 
     .block-socical .instagram:hover {
         color: #fff;
-        background-color: #A1C9F1;
+        background-color: #3d76f3;
 
     }
 
@@ -151,7 +176,8 @@ html,body {
 
     .block-socical .tripper:hover {
         color: #fff;
-        background-color: #A1C9F1;
+        background-color: #3d76f3;
+
 
     }
 
@@ -256,9 +282,277 @@ html,body {
 
 }
 
-/* For mobile section  */
+
+/* For mobile header  */
 
 @media (max-width: 490px) {
+    header {
+        background-image: url(../image/hp1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        
+
+        position: relative;
+        padding-bottom: 60px;
+    }
+
+    .overlay-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+    }
+
+    
+    nav {
+    
+    }
+
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: bold !important;
+        /* text-transform: uppercase; */
+        font-size: 1.3rem;
+
+        color: #A1C9F1 !important;
+    }
+
+    .navbar-brand i {
+        padding-right: 5px;
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler {
+        border-color: #fff !important;
+    }
+
+    .navbar-toggler:hover {
+        border-color: #fff !important;
+    }
+
+    .navbar-icon i {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .navbar-collapse.show {
+        background-color: #a1c9f1;
+        /* width: 100% !important; */
+
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 10px;
+
+        position: absolute;
+        top: 45px;
+        right: 13px;
+        width: 40% ;
+        z-index: 101;
+        height: 230px;
+
+        
+        transition: all linear 0.2s;
+        
+    }
+
+    .collapse:not(.show) {
+        position: absolute;
+        right: 13px !important;
+        top: 45px;
+        height: 230px;
+        width: 0% ;
+
+
+       
+
+    }
+    
+    
+    .navbar-nav {
+
+    }
+
+    .navbar-nav .nav-link {
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding-left: 10px;
+
+        
+        transition: all linear 0.2s;
+        color: #fff !important;
+    }
+
+
+    .nav-item.active .nav-link {
+        color: #3d76f3 !important;
+        font-size: 1rem!important;
+    }
+   
+
+    .navbar-nav .nav-link:hover {
+        color: #3d76f3 !important;
+      
+
+    }
+
+
+    .block-socical {
+        width: 90%;
+        padding-left: 10px;
+
+
+        display: flex;
+        justify-content: space-between;
+
+            
+    }
+
+    .block-socical .facebook {
+        background-color: #fff;
+        padding: 5px 13px;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .facebook:hover {
+        color: #fff;
+        background-color: #3d76f3;
+
+
+    }
+
+    .block-socical .instagram {
+        background-color: #fff;
+        padding: 5px 11px;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .instagram:hover {
+        color: #fff;
+        background-color: #3d76f3;
+
+    }
+
+    .block-socical .tripper {
+        background-color: #fff;
+        padding: 5px 13px;
+        border-radius: 10px;
+        color: black;
+    }
+
+    .block-socical .tripper:hover {
+        color: #fff;
+        background-color: #3d76f3;
+
+
+    }
+
+    /* ---- carousel ----  */
+    .carousel {
+        margin-top: 40px;
+    }
+
+    .carousel-title {
+        line-height: 2;
+
+        text-align: center;
+    }
+
+    .carousel-title h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: rgb(218, 209, 209);
+
+        margin-bottom: 30px;
+    }
+
+    .carousel-title h6 {
+        color: rgba(255, 255, 255, 0.932);
+        font-size: 1.5rem;
+        line-height: 1.5;
+
+        padding: 0 20px;
+    }
+
+    .carousel-content {
+        height: 200px;
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
+    .button-carousel  {
+        color: #fff;
+        border-color: #A1C9F1 !important;
+        border-radius: 0;
+        border: 2px solid;
+        background: transparent;
+        
+        width: 300px;
+        height: 45px;
+
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 400;
+
+       
+    }
+
+    .button-carousel:hover {
+        background-color: #fff;
+        color: #A1C9F1;
+        border-color: #fff !important;
+    }
+
+
+    .scroll-down-header {
+        position: absolute;
+        bottom: 5%;
+        right: 23%;
+
+
+    }
+
+    .scroll-down-header a i {
+        color: #A1C9F1;
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+
+    .scroll-down-header a span{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+
+        position: relative;
+    }
+
+    .scroll-down-header a span::after {
+        position: absolute;
+        top: 5px;
+        right: -20px;
+        
+        content: "";
+        width: 2px;
+        height: 85px;
+        background-color: #fff;
+    }
+}
+
+/* For tablet section  */
+
+@media (min-width: 490px) and (max-width: 740px) {
     section {
         
     }
@@ -268,6 +562,11 @@ html,body {
         background-color: #A1C9F1;
 
         padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
     }
 
     .about-title {
@@ -302,6 +601,23 @@ html,body {
         font-size: 2.2rem;
     }
 
+    .about-avar {
+        width: 140px;
+        height: 95px;
+        margin: 20px 0;
+
+        border: 3px solid #3d76f3;
+        border-radius: 10px;
+    }
+
+    .about-avar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+
+    }
+
     .about-content {
         padding: 0 60px;
         margin-top: 20px;
@@ -318,7 +634,7 @@ html,body {
 
 
     .block-socical-about {
-        width: 100%;
+        width: 80%;
         padding: 40px 80px 20px;
 
 
@@ -353,7 +669,12 @@ html,body {
         background-color: #fff;
         padding: 5px 13px;
         border-radius: 50%;
-      
+        
+        border: 2px solid transparent;
+    }
+
+    .block-socical-about .facebook:hover {
+        border-color: #3d76f3;
     }
 
     .block-socical-about .instagram {
@@ -361,8 +682,13 @@ html,body {
 
         padding: 5px 11px;
         border-radius: 50%;
+        border: 2px solid transparent;
 
 
+    }
+
+    .block-socical-about .instagram:hover {
+        border-color: #3d76f3;
     }
 
     .block-socical-about .tripper {
@@ -370,10 +696,906 @@ html,body {
 
         padding: 5px 13px;
         border-radius: 50%;
+        border: 2px solid transparent;
         
 
     }
 
+    .block-socical-about .tripper:hover {
+        border-color: #3d76f3;
+    }
+
+
+    /* ------ portfolio -------  */
+    .portfolio {
+        
+    }
+
+    .portfolio-title {
+        text-align: center;
+        height: 437px;
+        background-image: url(../image/hp10.jpg);
+        background-position:  bottom;
+        background-size: 100%;
+        position: relative;
+    }
+
+    .portfolio-title::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+        content: "";
+    }
+
+    .portfolio-title h2 {
+        padding-top: 60px;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 1.3rem;
+        /* text-transform: uppercase; */
+        /* font-weight: bold; */
+        color: #A1C9F1;
+
+        position: relative;
+        z-index: 100;
+    }
+
+    .portfolio-title h6 {
+        font-size: 1.4rem;
+        padding-top: 10px;
+        color: rgba(128, 128, 128, 0.849);
+
+        position: relative;
+        z-index: 100;
+        color: #fff;
+    }
+
+    .portfolio-title-clone {
+        width: 600px;
+        height: 500px;
+
+
+        overflow: hidden;
+
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        position: relative;
+    }
+
+    .portfolio-title-clone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: all linear 0.3s;
+
+    }
+
+    .portfolio-title-clone:hover img {
+        transform: scale(1.5);
+    }
+
+    .portfolio-content {
+        padding-top: 251px;
+        background-color: #A1C9F1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2350px;
+        padding-bottom: 80px;
+
+        
+
+    }
+
+    .portfolio-content-clone {
+        width: 600px;
+        height: 500px;
+        
+
+    }
+
+    .block-clone {
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    .portfolio-content-clone img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        transition: all linear 0.3s;
+    }
+
+    .block-clone:hover img {
+        transform: scale(1.5);
+    }
+
+    
+
+    .overlay-portfolio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+        
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: all linear 0.2s;
+    }
+
+    .portfolio-title-clone:hover .overlay-portfolio{
+        opacity: 1;
+    }
+
+    .overlay-portfolio-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+        
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: all linear 0.2s;
+    }
+
+    .portfolio-title-clone:hover .overlay-portfolio{
+        opacity: 1;
+    }
+
+
+    .block-clone:hover .overlay-portfolio-2{
+        opacity: 1;
+    }
+
+    .overlay-portfolio-link {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        z-index: 100;
+
+        color: #fff;
+
+        width: 40px;
+        height: 40px;
+
+        border: 1px solid;
+        border-color: #fff;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all linear 0.3s;
+    }
+
+    .overlay-portfolio:hover .overlay-portfolio-link {
+        top: 20px;
+    }
+
+    .block-clone:hover .overlay-portfolio-link {
+        top: 20px;
+    }
+
+    
+
+    .overlay-portfolio-plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        color: #fff;
+       
+
+        
+    }
+
+    .overlay-portfolio-content {
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+        text-align: left;
+
+      
+        transition: all linear 0.3s;
+        color: #fff;
+    }
+
+    .overlay-portfolio:hover .overlay-portfolio-content {
+        bottom: 20px
+    }
+
+    .block-clone:hover .overlay-portfolio-content {
+        bottom: 20px
+    }
+
+   
+
+    .overlay-portfolio-content h5 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .overlay-portfolio-content h6 {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    /* ----- footer ----  */
+    footer {
+
+    }
+
+    .contact {
+       background-image: url(../image/hp9.jpg);
+       background-size: cover;
+       background-position: center;
+
+       position: relative;
+    }
+
+    .line {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+
+        width: 2px;
+        height: 100px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    .overlay-contact {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        background-color: rgba(0, 0, 0, 0.521);
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-title {
+        position: relative;
+        z-index: 100;
+
+        color: #fff;
+
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .contact-title h6 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #A1C9F1;
+    }
+
+    .contact-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-content {
+        position: relative;
+        z-index: 100;
+    }
+
+    .email {
+        padding-bottom: 50px;
+    }
+
+    .email-title {
+        color: #A1C9F1;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .email-title h6 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+
+   
+
+    .email-form {
+        
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-form .form-control {
+        width: 450px;
+
+        background-color: transparent !important;
+        color: #fff;
+    }
+
+    textarea {
+        height: 300px !important;
+    }
+
+    .form-control::placeholder {
+        color: #fff !important;
+        font-size: 0.9rem !important;
+    }
+
+    .email-form .btn {
+        background-color: #A1C9F1 !important;
+        width: 450px;
+        text-transform: uppercase;
+        
+    }
+
+    .copyright {
+        text-align: center;
+
+        position: relative;
+        z-index: 100;
+
+        padding: 20px;
+    }
+
+    .copyright h6 {
+        padding: 0;
+        margin: 0;
+
+        font-size: 0.9rem !important;
+
+        color: #A1C9F1;
+    }
 
 }
+
+
+/* For moblie section  */
+@media (max-width: 490px) {
+    section {
+        
+    }
+
+    .about {
+        padding-top: 90px;
+        background-color: #A1C9F1;
+
+        padding-bottom: 30px;
+
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .about-title {
+        text-align: center;
+        
+        padding-bottom: 20px;
+
+        position: relative;
+       
+    }
+
+    .about-title::before {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 50%;
+        height: 1px;
+        background-color: rgb(255 255 255 / 49%);
+    }
+
+    .about-title h6 {
+        font-size: 1rem;
+        text-transform: uppercase;
+
+    }
+
+    .about-title h2 {
+        color: rgba(255, 255, 255, 0.932);
+        font-size: 2.2rem;
+    }
+
+    .about-avar {
+        width: 140px;
+        height: 95px;
+        margin: 20px 0;
+
+        border: 3px solid #3d76f3;
+        border-radius: 10px;
+    }
+
+    .about-avar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 7px;
+
+    }
+
+    .about-content {
+        padding: 0 60px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .about-content p {
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1rem;
+
+        line-height: 28px;
+    }
+
+
+    .block-socical-about {
+        width: 80%;
+        padding: 40px 80px 20px;
+
+
+
+        display: flex;
+        justify-content: space-around;
+
+        
+        position: relative;
+    }
+
+    .block-socical-about::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        
+        transform: translateX(-50%);
+
+        width: 50%;
+        height: 1px;
+        background-color: rgb(255 255 255 / 49%);
+    }
+
+    .block-socical-about a {
+        text-decoration: none;
+        color: black!important;
+
+    }
+
+    .block-socical-about .facebook {
+        background-color: #fff;
+        padding: 5px 13px;
+        border-radius: 50%;
+        
+        border: 2px solid transparent;
+    }
+
+    .block-socical-about .facebook:hover {
+        border-color: #3d76f3;
+    }
+
+    .block-socical-about .instagram {
+        background-color: #fff;
+
+        padding: 5px 11px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+
+    }
+
+    .block-socical-about .instagram:hover {
+        border-color: #3d76f3;
+    }
+
+    .block-socical-about .tripper {
+        background-color: #fff;
+
+        padding: 5px 13px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        
+
+    }
+
+    .block-socical-about .tripper:hover {
+        border-color: #3d76f3;
+    }
+
+
+    /* ------ portfolio -------  */
+    .portfolio {
+       
+    }
+
+    .portfolio-title {
+        text-align: center;
+        height: 400px;
+
+        background-image: url(../image/hp10.jpg);
+        background-position: bottom center;
+        background-size: 120%;
+       
+
+        position: relative;
+    }
+
+    .portfolio-title::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+        content: "";
+    }
+
+    .portfolio-title h2 {
+        padding-top: 60px;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 1.3rem;
+        /* text-transform: uppercase; */
+        /* font-weight: bold; */
+        color: #A1C9F1;
+
+        position: relative;
+        z-index: 100;
+    }
+
+    .portfolio-title h6 {
+        font-size: 1.4rem;
+        padding-top: 10px;
+        color: #fff;
+
+        position: relative;
+        z-index: 100;
+    }
+
+    .portfolio-title-clone {
+        width: 350px;
+        height: 350px;
+
+
+        overflow: hidden;
+
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        position: relative;
+    }
+
+    .portfolio-title-clone img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: all linear 0.3s;
+
+    }
+
+    .portfolio-title-clone:hover img {
+        transform: scale(1.5);
+    }
+
+    .portfolio-content {
+        padding-top: 138px;
+        background-color: #A1C9F1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1650px;
+        
+
+        
+
+    }
+
+    .portfolio-content-clone {
+        width: 350px;
+        height: 350px;
+        
+
+    }
+
+    .block-clone {
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+        position: relative;
+    }
+
+    .portfolio-content-clone img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        transition: all linear 0.3s;
+    }
+
+    .block-clone:hover img {
+        transform: scale(1.5);
+    }
+
+    
+
+    .overlay-portfolio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+        
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: all linear 0.2s;
+    }
+
+    .portfolio-title-clone:hover .overlay-portfolio{
+        opacity: 1;
+    }
+
+    .overlay-portfolio-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+        
+        background-color: rgba(0, 0, 0, 0.616);
+        transition: all linear 0.2s;
+    }
+
+    .portfolio-title-clone:hover .overlay-portfolio{
+        opacity: 1;
+    }
+
+
+    .block-clone:hover .overlay-portfolio-2{
+        opacity: 1;
+    }
+
+    .overlay-portfolio-link {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        z-index: 100;
+
+        color: #fff;
+
+        width: 40px;
+        height: 40px;
+
+        border: 1px solid;
+        border-color: #fff;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all linear 0.3s;
+    }
+
+    .overlay-portfolio:hover .overlay-portfolio-link {
+        top: 20px;
+    }
+
+    .block-clone:hover .overlay-portfolio-link {
+        top: 20px;
+    }
+
+    
+
+    .overlay-portfolio-plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        color: #fff;
+       
+
+        
+    }
+
+    .overlay-portfolio-content {
+        position: absolute;
+        bottom: -60px;
+        left: 20px;
+        text-align: left;
+
+      
+        transition: all linear 0.3s;
+        color: #fff;
+    }
+
+    .overlay-portfolio:hover .overlay-portfolio-content {
+        bottom: 20px
+    }
+
+    .block-clone:hover .overlay-portfolio-content {
+        bottom: 20px
+    }
+
+   
+
+    .overlay-portfolio-content h5 {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    .overlay-portfolio-content h6 {
+        font-size: 0.8rem;
+        padding: 0;
+    }
+
+    /* ----- footer ----  */
+    footer {
+
+    }
+
+    .contact {
+       background-image: url(../image/hp9.jpg);
+       background-size: cover;
+       background-position: center;
+
+       position: relative;
+    }
+
+    .line {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+
+        width: 2px;
+        height: 80px;
+        background-color: #fff;
+        z-index: 100;
+    }
+
+    .overlay-contact {
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        background-color: rgba(0, 0, 0, 0.521);
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact-title {
+        position: relative;
+        z-index: 100;
+
+        color: #fff;
+
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .contact-title h6 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #A1C9F1;
+    }
+
+    .contact-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-content {
+        position: relative;
+        z-index: 100;
+    }
+
+    .email {
+        padding-bottom: 50px;
+    }
+
+    .email-title {
+        color: #A1C9F1;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .email-title h6 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+
+    }
+
+   
+
+    .email-form {
+        
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email-form .form-control {
+        width: 350px;
+        background-color: transparent !important;
+        color: #fff;
+    }
+
+    textarea {
+        height: 300px !important;
+    }
+
+    .form-control::placeholder {
+        color: #fff !important;
+        font-size: 0.9rem !important;
+    }
+
+    .email-form .btn {
+        background-color: #A1C9F1 !important;
+        width: 350px;
+        text-transform: uppercase;
+        
+    }
+
+    .copyright {
+        text-align: center;
+
+        position: relative;
+        z-index: 100;
+
+        padding: 20px;
+    }
+
+    .copyright h6 {
+        padding: 0;
+        margin: 0;
+
+        font-size: 0.9rem !important;
+
+        color: #A1C9F1;
+    }
+
+
+}
+
+
+
 
