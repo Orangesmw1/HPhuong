@@ -83,7 +83,7 @@ html,body {
         z-index: 101;
         height: 230px;
         
-        transform: translatex(-10px);
+      
 
         
         transition: all linear 0.4s;
@@ -92,7 +92,7 @@ html,body {
 
     .collapse:not(.show) {
         
-        transform: translateX(0);
+       
         position: absolute;
         top: 45px;
         right: -50px;
@@ -371,14 +371,14 @@ html,body {
         border-radius: 20px;
         padding: 10px;
 
-        position: absolute;
+        position: absolute !important;
         top: 50px;
         right: 13px !important;
         width: 45% ;
         z-index: 101;
         height: 220px;
         
-        transform: translatex(-10px);
+        
 
         
         transition: all linear 0.4s;
@@ -388,8 +388,8 @@ html,body {
 
     .collapse:not(.show) {
         
-        transform: translateX(0);
-        position: absolute;
+        
+        position: absolute !important;
         top: 45px;
         right: -50px;
 
