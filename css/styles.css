@@ -6,7 +6,7 @@
 
 html,body {
     font-family: 'Montserrat', sans-serif;
-  
+    scroll-behavior: smooth;
 }
 
 /* ----------- header ----------  */
@@ -77,23 +77,25 @@ html,body {
         padding: 10px;
 
         position: absolute;
-        top: 45px;
-        right: 13px;
+        top: 55px;
+        right: 13px !important;
         width: 30% ;
         z-index: 101;
         height: 230px;
+        
+        transform: translatex(-10px);
 
         
-        transition: all linear 0.2s;
+        transition: all linear 0.4s;
         
     }
 
     .collapse:not(.show) {
+        
+        transform: translateX(0);
         position: absolute;
-        right: 13px !important;
         top: 45px;
-       
-
+        right: -50px;
 
        
 
@@ -220,7 +222,7 @@ html,body {
     }
 
     .button-carousel  {
-        color: #fff;
+        
         border-color: #A1C9F1 !important;
         border-radius: 0;
         border: 2px solid;
@@ -232,14 +234,24 @@ html,body {
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 400;
+        text-decoration: none;
 
        
     }
 
+    .button-carousel a {
+        color: #fff !important;
+
+    }
+
     .button-carousel:hover {
         background-color: #fff;
-        color: #A1C9F1;
+        
         border-color: #fff !important;
+    }
+
+    .button-carousel:hover a {
+        color: #A1C9F1 !important;
     }
 
 
@@ -309,9 +321,12 @@ html,body {
     }
 
     
-    nav {
-    
-    }
+    /* nav#navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    } */
+
 
     .navbar-brand {
         font-family: 'Montserrat', sans-serif !important;
@@ -327,8 +342,14 @@ html,body {
         font-size: 1.5rem;
     }
 
-    .navbar-toggler {
+    .navbar-toggler#navbar {
         border-color: #fff !important;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        z-index: 200;
+
+        
     }
 
     .navbar-toggler:hover {
@@ -349,24 +370,26 @@ html,body {
         padding: 10px;
 
         position: absolute;
-        top: 45px;
-        right: 13px;
-        width: 40% ;
+        top: 50px;
+        right: 13px !important;
+        width: 45% ;
         z-index: 101;
-        height: 230px;
+        height: 220px;
+        
+        transform: translatex(-10px);
 
         
-        transition: all linear 0.2s;
+        transition: all linear 0.4s;
+        
         
     }
 
     .collapse:not(.show) {
+        
+        transform: translateX(0);
         position: absolute;
-        right: 13px !important;
         top: 45px;
-        height: 230px;
-        width: 0% ;
-
+        right: -50px;
 
        
 
@@ -456,7 +479,7 @@ html,body {
 
     /* ---- carousel ----  */
     .carousel {
-        margin-top: 40px;
+        padding-top: 70px;
     }
 
     .carousel-title {
@@ -493,7 +516,7 @@ html,body {
     }
 
     .button-carousel  {
-        color: #fff;
+        
         border-color: #A1C9F1 !important;
         border-radius: 0;
         border: 2px solid;
@@ -505,13 +528,28 @@ html,body {
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 400;
+        
+
+        text-decoration: none;
 
        
     }
 
+    .button-carousel a {
+        color: #fff !important;
+        text-decoration: none;
+
+    }
+
+    .button-carousel:hover a {
+        color: #A1C9F1 !important;
+    }
+
+
+
     .button-carousel:hover {
         background-color: #fff;
-        color: #A1C9F1;
+        
         border-color: #fff !important;
     }
 
@@ -522,6 +560,10 @@ html,body {
         right: 23%;
 
 
+    }
+
+    .scroll-down-header a {
+        text-decoration: none;
     }
 
     .scroll-down-header a i {
