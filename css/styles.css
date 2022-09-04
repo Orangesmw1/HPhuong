@@ -142,6 +142,11 @@ html,body {
             
     }
 
+    .facebook a , .instagram a , .tripper a {
+        text-decoration: none !important;
+        color: black;
+    }
+
     .block-socical .facebook {
         background-color: #fff;
         padding: 5px 13px;
@@ -433,11 +438,17 @@ html,body {
             
     }
 
+    .facebook a , .instagram a , .tripper a {
+        text-decoration: none !important;
+        color: black;
+    }
+
     .block-socical .facebook {
         background-color: #fff;
         padding: 5px 13px;
         border-radius: 10px;
         color: black;
+
     }
 
     .block-socical .facebook:hover {
