@@ -86,16 +86,16 @@ html,body {
       
 
         
-        transition: all linear 0.4s;
+        transition: all linear 0.2s;
         
     }
 
     .collapse:not(.show) {
         
        
-        position: absolute;
+      
         top: 45px;
-        right: -50px;
+        right: 13px;
 
        
 
@@ -381,7 +381,7 @@ html,body {
         
 
         
-        transition: all linear 0.4s;
+        transition: all linear 0.2s;
         
         
     }
@@ -389,9 +389,8 @@ html,body {
     .collapse:not(.show) {
         
         
-        position: absolute !important;
         top: 45px;
-        right: -50px;
+        right: 13px;
 
        
 
